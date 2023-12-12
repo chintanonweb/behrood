@@ -1,0 +1,67 @@
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow-sm">
+    <a routerLink="/" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+        <img src="assets/logo.svg" alt="logo" width="150">
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                true}" class="nav-item nav-link">Home</a>
+            <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                true}" class="nav-item nav-link">About us</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Target species &raquo; </a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Target species</a></li>
+                            <li><a class="dropdown-item" href="#">Dosage form</a></li>
+                            <li><a class="dropdown-item" href="#">Drug category</a></li>
+                            <li><a class="dropdown-item" href="#">Cattle</a></li>
+                            <li><a class="dropdown-item" href="#">Sheep & Goats</a></li>
+                            <li><a class="dropdown-item" href="#">Poultry</a></li>
+                            <li><a class="dropdown-item" href="#">Horse</a></li>
+                            <li><a class="dropdown-item" href="#">Dogs & Cats</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Dosage form &raquo; </a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Oral Solutions</a></li>
+                            <li><a class="dropdown-item" href="#">Suspensions</a></li>
+                            <li><a class="dropdown-item" href="#">Tablets & Boli</a></li>
+                            <li><a class="dropdown-item" href="#">Water Soluble Powders</a></li>
+                            <li><a class="dropdown-item" href="#">Premixes</a></li>
+                            <li><a class="dropdown-item" href="#">Concentrated liquids</a></li>
+                            <li><a class="dropdown-item" href="#">Oral Pastes</a></li>
+                            <li><a class="dropdown-item" href="#">Topical Sprays</a></li>
+                            <li><a class="dropdown-item" href="#">Mouthwash</a></li>
+                            <li><a class="dropdown-item" href="#">Medicated Shampoos</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Drug category &raquo;</a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Antibiotics</a></li>
+                            <li><a class="dropdown-item" href="#">Anticoccidials</a></li>
+                            <li><a class="dropdown-item" href="#">Anthelmintics</a></li>
+                            <li><a class="dropdown-item" href="#">Disinfectants</a></li>
+                            <li><a class="dropdown-item" href="#">Vitamins</a></li>
+                            <li><a class="dropdown-item" href="#">Anti-inflammatories</a></li>
+                            <li><a class="dropdown-item" href="#">Anti-fungals</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <a routerLink="/sister-company" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                true}" class="nav-item nav-link">Sister Companies</a>
+            <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                true}" class="nav-item nav-link">Contact us</a>
+        </div>
+        <a routerLink="/" href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get Started
+            <i class="fa fa-arrow-right ms-3"></i>
+        </a>
+    </div>
+</nav>
+<!-- Navbar End -->
