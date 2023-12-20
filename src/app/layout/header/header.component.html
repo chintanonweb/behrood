@@ -13,10 +13,13 @@
             <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
                 true}" class="nav-item nav-link">About us</a>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                    true}">Products</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Target species &raquo; </a>
-                        <ul class="submenu dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="/products/target-species" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                        true}">Target species </a>
+                    <!-- <li><a class="dropdown-item" href="#">Target species &raquo; </a> -->
+                        <!-- <ul class="submenu dropdown-menu">
                             <li><a class="dropdown-item" href="#">Target species</a></li>
                             <li><a class="dropdown-item" href="#">Dosage form</a></li>
                             <li><a class="dropdown-item" href="#">Drug category</a></li>
@@ -25,10 +28,12 @@
                             <li><a class="dropdown-item" href="#">Poultry</a></li>
                             <li><a class="dropdown-item" href="#">Horse</a></li>
                             <li><a class="dropdown-item" href="#">Dogs & Cats</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
-                    <li><a class="dropdown-item" href="#">Dosage form &raquo; </a>
-                        <ul class="submenu dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="/products/dosage-form" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                        true}">Dosage form</a>
+                    <!-- <li><a class="dropdown-item" href="#">Dosage form &raquo; </a> -->
+                        <!-- <ul class="submenu dropdown-menu">
                             <li><a class="dropdown-item" href="#">Oral Solutions</a></li>
                             <li><a class="dropdown-item" href="#">Suspensions</a></li>
                             <li><a class="dropdown-item" href="#">Tablets & Boli</a></li>
@@ -39,10 +44,12 @@
                             <li><a class="dropdown-item" href="#">Topical Sprays</a></li>
                             <li><a class="dropdown-item" href="#">Mouthwash</a></li>
                             <li><a class="dropdown-item" href="#">Medicated Shampoos</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
-                    <li><a class="dropdown-item" href="#">Drug category &raquo;</a>
-                        <ul class="submenu dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="/products/drug-category" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                        true}">Drug category</a>
+                    <!-- <li><a class="dropdown-item" href="#">Drug category &raquo;</a> -->
+                        <!-- <ul class="submenu dropdown-menu">
                             <li><a class="dropdown-item" href="#">Antibiotics</a></li>
                             <li><a class="dropdown-item" href="#">Anticoccidials</a></li>
                             <li><a class="dropdown-item" href="#">Anthelmintics</a></li>
@@ -50,7 +57,7 @@
                             <li><a class="dropdown-item" href="#">Vitamins</a></li>
                             <li><a class="dropdown-item" href="#">Anti-inflammatories</a></li>
                             <li><a class="dropdown-item" href="#">Anti-fungals</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                 </ul>
             </li>
@@ -59,9 +66,6 @@
             <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
                 true}" class="nav-item nav-link">Contact us</a>
         </div>
-        <a routerLink="/" href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get Started
-            <i class="fa fa-arrow-right ms-3"></i>
-        </a>
     </div>
 </nav>
 <!-- Navbar End -->

@@ -25,38 +25,37 @@
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <h6 class="text-primary text-uppercase mb-2">Contact Us</h6>
             <h1 class="display-6 mb-4">If You Have Any Query, Please Contact Us</h1>
-            <form>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Your Name">
-                            <label for="name">Your Name</label>
-                        </div>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Your name</label>
+                    <input type="text" class="form-control" id="name" required>
+                    <div class="invalid-feedback">
+                        Please enter name.
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="email" class="form-control border-0 bg-light" id="email"
-                                placeholder="Your Email">
-                            <label for="email">Your Email</label>
-                        </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">
+                        Please enter email id.
                     </div>
-                    <div class="col-12">
-                        <div class="form-floating">
-                            <input type="text" class="form-control border-0 bg-light" id="subject"
-                                placeholder="Subject">
-                            <label for="subject">Subject</label>
-                        </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="validationCustom03" class="form-label">City</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please enter subject.
                     </div>
-                    <div class="col-12">
-                        <div class="form-floating">
-                            <textarea class="form-control border-0 bg-light" placeholder="Leave a message here"
-                                id="message" style="height: 150px"></textarea>
-                            <label for="message">Message</label>
-                        </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                    <div class="invalid-feedback">
+                        Please enter message.
                     </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
                 </div>
             </form>
         </div>
