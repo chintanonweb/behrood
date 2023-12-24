@@ -12,17 +12,16 @@
 <!-- Page Header End -->
 <div class="container-fluid mt-5 product-container">
     <div class="d-flex bg-white flex-row shadow nav-border">
-        <div class="d-flex align-items-start">
-            <div class="nav flex-column nav-pills me-3 nav-shadow pb-5" id="v-pills-tab" role="tablist"
+        <div class="d-flex align-items-start w-100 product-accordian">
+            <div class="nav flex-column nav-pills me-3 nav-shadow pb-5 product-tab" id="v-pills-tab" role="tablist"
                 aria-orientation="vertical">
                 <button class="nav-link active" id="v-pills-cattle-tab" data-bs-toggle="pill"
                     data-bs-target="#v-pills-cattle" type="button" role="tab" aria-controls="v-pills-cattle"
                     aria-selected="true">
                     Cattle
                 </button>
-                <button class="nav-link" id="v-pills-ship-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-ship" type="button" role="tab" aria-controls="v-pills-ship"
-                    aria-selected="false">
+                <button class="nav-link" id="v-pills-ship-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ship"
+                    type="button" role="tab" aria-controls="v-pills-ship" aria-selected="false">
                     Sheep & Goats
                 </button>
                 <button class="nav-link" id="v-pills-poultry-tab" data-bs-toggle="pill"
@@ -30,18 +29,16 @@
                     aria-selected="false">
                     Poultry
                 </button>
-                <button class="nav-link" id="v-pills-horse-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-horse" type="button" role="tab" aria-controls="v-pills-horse"
-                    aria-selected="false">
+                <button class="nav-link" id="v-pills-horse-tab" data-bs-toggle="pill" data-bs-target="#v-pills-horse"
+                    type="button" role="tab" aria-controls="v-pills-horse" aria-selected="false">
                     Horse
                 </button>
-                <button class="nav-link" id="v-pills-dogs-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-dogs" type="button" role="tab" aria-controls="v-pills-dogs"
-                    aria-selected="false">
+                <button class="nav-link" id="v-pills-dogs-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dogs"
+                    type="button" role="tab" aria-controls="v-pills-dogs" aria-selected="false">
                     Dogs & Cats
                 </button>
             </div>
-            <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-content w-100" id="v-pills-tabContent">
                 <div class="tab-pane fade show active pt-4 me-4" id="v-pills-cattle" role="tabpanel"
                     aria-labelledby="v-pills-cattle-tab">
                     <div class="ms-3">
@@ -51,7 +48,7 @@
                             magnam modi iusto porro excepturi.</p>
                     </div>
                 </div>
-                <div class="tab-pane fade pt-4 me-4" id="v-pills-ship" role="tabpanel"
+                <div class="tab-pane fade py-4 me-4" id="v-pills-ship" role="tabpanel"
                     aria-labelledby="v-pills-ship-tab">
                     <div class="ms-3">
                         <h3>Sheeps & Goats</h3>
@@ -60,7 +57,7 @@
                             magnam modi iusto porro excepturi.</p>
                     </div>
                 </div>
-                <div class="tab-pane fade pt-4 me-4" id="v-pills-poultry" role="tabpanel"
+                <div class="tab-pane fade py-4 me-4" id="v-pills-poultry" role="tabpanel"
                     aria-labelledby="v-pills-poultry-tab">
                     <div class="ms-3">
                         <h3>Poultry</h3>
@@ -69,7 +66,7 @@
                             magnam modi iusto porro excepturi.</p>
                     </div>
                 </div>
-                <div class="tab-pane fade pt-4 me-4" id="v-pills-horse" role="tabpanel"
+                <div class="tab-pane fade py-4 me-4" id="v-pills-horse" role="tabpanel"
                     aria-labelledby="v-pills-horse-tab">
                     <div class="ms-3">
                         <h3>Horse</h3>
@@ -78,13 +75,110 @@
                             magnam modi iusto porro excepturi.</p>
                     </div>
                 </div>
-                <div class="tab-pane fade pt-4 me-4" id="v-pills-dogs" role="tabpanel"
+                <div class="tab-pane fade py-4 me-4" id="v-pills-dogs" role="tabpanel"
                     aria-labelledby="v-pills-dogs-tab">
                     <div class="ms-3">
                         <h3>Dogs & Cats</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias eum fugiat
-                            asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at
-                            magnam modi iusto porro excepturi.</p>
+                        <div class="w-100">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Dermocin
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Antibiotic and anti-inflammatory spray for dogs and cats</p>
+                                            <p> 60 & 120 ml opaque spray</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Wormex
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Broad spectrum anthelmintics for small to medium size dogs</p>
+                                            <p>Blisters of 10 bone-shaped tablets</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            ChloSeb
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Antiseptic, antifungal, anti yeast spray for dogs, cats & horses</p>
+                                            <p>60 & 120 ml opaque spray</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="wormex">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            Wormex XL
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="wormex"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Broad spectrum anthelmintics for medium to big size dogs</p>
+                                            <p>Blisters of 10 oval-shaped tablets</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="dentoral">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            Dentoral
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="dentoral"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Medicated Oral Dental Rinse For dogs and cats</p>
+                                            <p>50 ml opaque spray</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="pyraPlus">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                            PyraPlus
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="pyraPlus"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Broad spectrum anthelmintics for small to medium size dogs</p>
+                                            <p>Blisters of 10 bone-shaped tablets</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

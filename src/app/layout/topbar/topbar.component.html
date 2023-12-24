@@ -12,11 +12,11 @@
             </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
-            <div class="h-100 d-inline-flex align-items-center me-4">
+            <div class="h-100 d-inline-flex align-items-center me-3">
                 <small class="fa fa-phone-alt text-primary me-2"></small>
                 <small>+98 21 8857 3446</small>
             </div>
-            <div class="h-100 d-inline-flex align-items-center mx-n2">
+            <div class="h-100 d-inline-flex align-items-center">
                 <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
                         class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
@@ -24,6 +24,19 @@
                 <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
                         class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="h-100 d-inline-flex align-items-center">
+                <div class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownLanguageButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ selectedLanguage === 'en' ? 'English' : 'Persian' }}
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownLanguageButton" style="z-index: 9999;">
+                        <li><a class="dropdown-item" (click)="switchLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" (click)="switchLanguage('pe')">Persian</a></li>
+                        <!-- Add more languages as needed -->
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

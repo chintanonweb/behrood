@@ -47,3 +47,21 @@
         font-size: 22px;
     }
 }
+
+@media (max-width: 768px) {
+    .product-container {
+
+        .product-accordian {
+            flex-direction: column;
+
+            .product-tab {
+                width: 100%;
+            }
+        }
+
+    }
+    .nav-pills .nav-link {
+        width: 100% !important;
+        height: auto !important;
+    }
+}

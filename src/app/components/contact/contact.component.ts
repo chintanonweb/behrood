@@ -19,8 +19,8 @@ export class ContactComponent {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      city: ['', Validators.required],
-      message: ['']
+      subject: ['', Validators.required],
+      message: ['', Validators.required]
     });
   }
   onSubmit(): void {

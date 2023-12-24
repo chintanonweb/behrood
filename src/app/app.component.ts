@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { NgwWowService } from 'ngx-wow';
 
 @Component({
@@ -8,7 +9,8 @@ import { NgwWowService } from 'ngx-wow';
 })
 export class AppComponent {
   title = 'behrood';
-  constructor(private wowService: NgwWowService) {
+  constructor(private wowService: NgwWowService, private translate: TranslateService) {
     this.wowService.init();
+    this.translate.setDefaultLang('en'); // Set default language
   }
 }
