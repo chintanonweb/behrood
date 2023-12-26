@@ -1,4 +1,9 @@
 .product-container {
+    .product-accordian{
+        overflow-y: auto;
+        max-height: 400px;
+    }
+ 
     p {
         text-align: justify;
         font-size: 13px;
